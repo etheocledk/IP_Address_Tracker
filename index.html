@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="background_image">
+        <img src="./assets/images/pattern-bg-desktop.png" alt="" />
+        <div class="search__result">
+          <div class="search__result_child">
+            <h1>IP Address Tracker</h1>
+            <div class="input__search__parent">
+              <div class="input__search">
+                <input
+                  type="text"
+                  placeholder="Search of any IP address or domain"
+                />
+                <span>&Rightarrow;</span>
+              </div>
+            </div>
+            <div class="result__information">
+              <div class="informations">
+                <h4>IP ADDRESS</h4>
+                <p class="ip_address"></p>
+              </div>
+              <hr />
+              <div class="informations">
+                <h4>LOCATION</h4>
+                <div>
+                  <p class="location"></p>
+                  <img
+                    src=""
+                    alt=""
+                  />
+                </div>
+              </div>
+              <hr />
+              <div class="informations">
+                <h4>CURRENT DATE & TIME</h4>
+                <p class="timezone"></p>
+              </div>
+              <hr />
+              <div class="informations">
+                <h4>ISP</h4>
+                <p class="isp"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
